@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pernyataan Perasaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        
+        .left {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto; /* Memungkinkan scroll */
+            background-color: #fff;
+            border-right: 2px solid #ddd;
+        }
+        
+        .left h2 {
+            margin-top: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .image-gallery {
+            display: flex;
+            flex-direction: column; /* Mengatur gambar dalam kolom */
+            gap: 10px; /* Jarak antar gambar */
+        }
+        
+        .image-gallery img {
+            width: 100%; /* Gambar responsif */
+            height: auto;
+            object-fit: cover; /* Agar gambar memenuhi konten */
+            border-radius: 10px; /* Membuat sudut gambar membulat */
+        }
+        .image-slider img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 14px; /* Ukuran font untuk caption */
+            color: #fff; /* Warna teks caption */
+            text-align: center; /* Memusatkan caption */
+            margin-top: 5px; /* Jarak antara gambar dan caption */
+            background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang dengan transparansi */
+            padding: 5px; /* Padding untuk caption */
+            border-radius: 5px; /* Membulatkan sudut caption */
+        }   
+        
+        .right {
+            flex: 2;
+            padding: 20px;
+            overflow-y: auto; /* Memungkinkan scroll */
+            background-color: #fff;
+        }
+        
+        .story {
+            height: 300px; /* Atur tinggi untuk scroll */
+            overflow-y: auto; /* Memungkinkan scroll */
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fafafa;
+        }
+        
+        .question {
+            margin-top: 20px;
+        }
+        
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .question input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .send-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .send-button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Ubah menjadi kolom untuk layar kecil */
+    }
+    .left, .right {
+        flex: unset; /* Hapus ukuran fleksibel */
+        width: 100%; /* Setiap bagian memenuhi lebar layar */
+    }
+    .story {
+        height: auto; /* Sesuaikan tinggi agar tidak membatasi konten */
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Our Memories</h2>
+            <div class="image-gallery">
+                <div>
+                    <!-- <img src="https://res.cloudinary.com/dyxhkvtqd/image/upload/f_auto,q_auto/jygtaqbbpnw8hp7iswth" alt="Momen 1">
+                    <div class="caption">Ini adalah awal terciptanya sharkyy, yeakh ur my sharky, lucuu bangett yaaaa, kamuuu keren bangettt bisa dapettt si sharkyy</div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/dyxhkvtqd/image/upload/f_auto,q_auto/a7zb8ibfc2uz9l7algex" alt="Momen 2">
+                    <div class="caption">Caption untuk Momen 2</div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/dyxhkvtqd/image/upload/v1730817014/mrjzxqzjr1dqsvn4gcip.jpg" alt="Momen 3">
+                    <div class="caption">Caption untuk Momen 3</div>
+                </div> -->
+                <img src="img/1.jfif" alt="Momen 1">
+                <div class="caption"> 12/10/24 
+                    <p>This is our firsdate, moment ini adalah moment pertama yang membuat ku bahagia bersamamu gin, terciptanya sharkyy, yeakh ur my sharky, lucuu bangett yaaaa, kamuuu keren bangettt bisa dapettt si sharkyy</p></div>
+            </div>
+            <div>
+                <img src="img/2.jpg" alt="Momen 2">
+                <div class="caption"> 13/10/24
+                    <p>Ini bukan date sih, lebih tepatnya jalan-jalan bareng si rika, foto ini ada di ragunan, tapi disitu walau kita baru sehari deket, rasanya aku udah deket banget sama kamu si gin. im very heppy. dan foto ini adalah salah satu foto favorit ku</p></div>
+            </div>
+            <div>
+                <img src="img/3.jpg" alt="Momen 3">
+                <div class="caption"> 19/10/24
+                    <p>Ini date kita selanjutnya sepertinya, ini foto ada di taman banteng, dari situ kita mulai banyak berbincang, semakin dekat dan setelah ke taman kita lanjut ke cafe untuk melanjutkan cerita</p></div>
+            </div>
+                <!-- Tambahkan gambar lain di sini -->
+            </div>
+        </div>
+        <div class="right">
+            <h2>My Story About You</h2>
+            <div class="story">
+                <p>Hayi Edginna Janne Azzahra, aku gatau si apa yang aku lagi rasain Sekarang, aku kayanya Cuma lagi mau cerita aja deh dari apa yang udah kita lewatin sebelumnya, mungkin ini terasa aneh dan gatau deh gimana. Mungkin disini aku cerita dari awal kita ketemu kali yaaa ihiyyy asik asik jos. 
+                    <p>Awal kita ketemu itu seinget aku waktu di gmb1 deh pas ketemu sama pak irsal juga, hahahaha kmu tau ga si waktu awal aku ngeliat kamu tuh kaya “anjir cakep banget co” trus kya oh yaudah lah paling Cuma anak magang biasa yang paling nanti waktu udah kenal yaudah cuma jadi temen biasa, terus ditambah lagi waktu kamu perkenalan sama pak irsal juga kan kamu bilang dari universitas padang, wahh kayanya diistu aku juga jadi mikir lagi “anjir jauh banget coo, udahlahhh sulitt wkwkk. Seinget aku itu di tanggal 31 september 2024. Kayanya itu hari pertama ku ketemu kamuu. Lanjut lah ceritanya kita jumpa di perpus,, dan aku ga Nyangka aja ternyata kamu ada di perpus, yang dimana aku mikir lagi jadi kaya “aaakhh anjay ketemu lagi coyy” tapi diisitu aku ga kepikiran yang gimana-gimana siii karena ku pikir “ah paling ini Cuma sebntar doang dan paling nanti balik lagi ke gmb1” tapi ternyata ngga, keesokan harinya masih tetep di tempat yang sama. Tapi disitu aku masih belum dapet moment buat kenalan lebih lanjut sama kamu, masih blum ada hal yang bisa dijadikan bahan obrolan kita.</p> 
+                    <p>Sampai dimana ada satu moment yang itu ngebuka obrolan semuanya, disatu hari itu awalnya kamu masih belum dteng ke perpus karena masih dalam perjalanan, disana Cuma ada rika dan aku ngebuka obrolan biar kenal ssama semua yang ada di perpus, ngobrol-ngorbol trus akhirnya disitu baru kamu dateng ges. Sedatengnya kamu aku ga langsung ngajak ngobrol kamu, masih bingung gimana ya cara mulai obrolan sama kamu, sampai akhirnya aku dapet momen waktu itu kamu lagi nyetel lagu spotify yaa, dari situ lah aku mulai cari celah buat dapetin kontak kamu, finally dalam obrolan itu aku dapetin ig kamu si:" HAHAH. setelah itu lanjut seperti hari-hari biasanya, sampai ada masanya kamu buat sg klo ga salah kamu lagi diluar gitu sih di anri kalo ga salah, baru deh aku komen dari situ, sampai akhirnya kita ngobrol bareng, makin lama makin asikk, dan respon yang kamu berikan ke aku ituuu sangatt membuatku senang siii, makasih banyak yaaa. terimakasih kamu telah memberikan respon yang baik ke aku sampai akhirnya masuk ke tahap sekarang ini, hari-hari kita lewati sampai kita jalan bareng, main bareng, tertawa bareng, tersenyum bareng, sampai mengenal satu sama lain lebih dalam. terimakasih egin</p>
+                    kamu mau memberikan kesempatan ini ke aku, aku harap kedepannya bisa menjadi lebih baik lagi ya. Gin dengan ini aku menyatakan aku nyaman sama kamu, aku sayang sama kamu, aku cinta sama kamu, kalo cerita ini sampe ke kamu, artinya aku mau serius ke kamu gin, aku yakin sama kamu, aku siap akan konsekuensi kedepannya, entah itu ldr atau apapun itu, aku usahain untuk membentuk hubungan yang baik dan sehat, terimakasih telah bertahan hingga saat ini, makasih udah membuat aku nyaman sama kamu, maaf kalo misalnya aku masih banyak kurangnya ke kamu ya, but i wanna try to my best. aku akan selalu ingin memperbaiki segala kekurangan aku, tapi tolong bantu aku juga yaaa gimana kedepannya. Jadikan hubungan kita semangat untuk menjalani hidup kedepannya yaa, dan jangan jadikan beban akan hal itu. Aku bahagia sama kamu egin, terimakasih atas segala kesempatan yang telah kamu berikan ke aku. Sekarang aku mau serius ke kamu gin, gin ill be best if u wanna be my gf!, say anything u want in below yakh!!.
+                
+            </div>
+            <div class="question">
+                <h3>How u feeling rn gin?</h3>
+                <label for="response">say anything u want ya!!</label>
+                <input type="text" id="response" placeholder="Tulis jawabanmu di sini...">
+                <a href="#" class="send-button" onclick="sendWhatsApp()">Kirim</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendWhatsApp() {
+            const response = document.getElementById('response').value;
+            const phoneNumber = '62895618085469'; // Nomor telepon penerima
+            const message = encodeURIComponent(response); // Mengkodekan pesan untuk URL
+            const url = `https://wa.me/${phoneNumber}?text=${message}`; // Membuat URL WhatsApp
+
+            window.open(url); // Membuka URL WhatsApp di tab baru
+        }
+    </script>
+</body>
+</html>
